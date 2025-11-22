@@ -1,22 +1,24 @@
 // Задача 3. Типізація масивів (файл task-3.ts)
 
-// У цьому коді є три масиви з різними типами даних: рядки, числа та об’єкти.
+const usernames: string[] = ["alice", "bob", "charlie"];
 
-// const usernames = ["alice", "bob", "charlie"];
+const ratings: number[] = [4.5, 3.8, 5];
 
-// const ratings = [4.5, 3.8, 5];
+interface Product {
+  title: string;
+  id: number;
+}
 
-// const products = [
-//   { id: 1, title: "Phone" },
-//   { id: 2, title: "Laptop" },
-// ];
+const products: Product[] = [
+  { id: 1, title: "Phone" },
+  { id: 2, title: "Laptop" },
+];
 
-// console.log(`Usernames: ${JSON.stringify(usernames)}`);
-// console.log(`Ratings: ${JSON.stringify(ratings)}`);
-// console.log(`Products: ${JSON.stringify(products)}`);
+console.log(`Usernames: ${JSON.stringify(usernames)}`);
+console.log(`Ratings: ${JSON.stringify(ratings)}`);
+console.log(`Products: ${JSON.stringify(products)}`);
 
 // Завдання:
-
 // Додай тип для масиву рядків usernames, використовуючи синтаксис [].
 // Додай тип для масиву чисел ratings, використовуючи синтаксис [].
 // Для масиву products:
